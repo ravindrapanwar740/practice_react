@@ -1,25 +1,87 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Home from "./components/Home";
+import Home2 from "./components/Home2";
+//import User from "./components/User"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react'
+import Hooks from "./components/Hooks";
+import Form from "./components/Form";
+
+class App extends Component {
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       toggle:true
+    }
+  }
+  
+  render() {
+    return (
+      <div>
+        <Form />
+        {/* <Hooks /> */}
+        {/* {
+          this.state.toggle?
+          <Home2 />:null
+ }
+ <button onClick={()=>{this.setState({toggle:!this.state.toggle})}}>Clickkkkkkk</button> */}
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function App() {
+
+// const item=[{
+//   id:1,
+//   name:'Ram',
+//   age:26
+// },
+// {
+//   id:2,
+// name:'Shyam',
+// age:27
+// },
+// {
+//   id:3,
+// name:'Mohan',
+// age:29
+// }
+// ]
+
+
+//   return (
+//     <div className="App">
+//     <h1>App</h1>
+//  <Home2 />
+
+// {/* <User /> */}
+   
+//     {/* <Home items={{Name:'ram'}} data="Indore"/> */}
+
+//     {/* <Home items={item} data="Indore"/> */}
+// {/* <Home text="Function component"/> */}
+
+//     </div>
+//   );
+// }
+
+//export default App;
