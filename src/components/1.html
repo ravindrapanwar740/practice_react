@@ -1,0 +1,151 @@
+webiwork13@Webiwork13:~/practice_react$ git add .
+webiwork13@Webiwork13:~/practice_react$ git commit -m "practice react"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+webiwork13@Webiwork13:~/practice_react$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   package-lock.json
+        modified:   package.json
+        modified:   src/App.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/components/About.js
+        src/components/Home3.js
+        src/components/List.js
+        src/components/List2.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+webiwork13@Webiwork13:~/practice_react$ git config --list
+user.email=deepak.kumawat@webiwork.com
+user.name=webiworkdeepak
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=git@github.com:ravindrapanwar740/practice_react.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+webiwork13@Webiwork13:~/practice_react$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   package-lock.json
+        modified:   package.json
+        modified:   src/App.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/components/About.js
+        src/components/Home3.js
+        src/components/List.js
+        src/components/List2.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+webiwork13@Webiwork13:~/practice_react$ git remkote show origin
+git: 'remkote' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+webiwork13@Webiwork13:~/practice_react$ git remote show origin
+* remote origin
+  Fetch URL: git@github.com:ravindrapanwar740/practice_react.git
+  Push  URL: git@github.com:ravindrapanwar740/practice_react.git
+  HEAD branch: (unknown)
+  Remote branch:
+    refs/remotes/origin/master stale (use 'git remote prune' to remove)
+  Local branch configured for 'git pull':
+    master merges with remote master
+webiwork13@Webiwork13:~/practice_react$ git log
+commit 94c80c98278b066f8faa32621d8dfc930245741a (HEAD -> master, origin/master)
+Author: webiworkdeepak <deepak.kumawat@webiwork.com>
+Date:   Thu Sep 30 17:17:10 2021 +0530
+
+    practice react
+
+commit 398bab029b5f2c2b62e3d59384b4c9364643296d
+Author: webiworkdeepak <deepak.kumawat@webiwork.com>
+Date:   Fri Sep 17 15:29:19 2021 +0530
+
+    Initialize project using Create React App
+webiwork13@Webiwork13:~/practice_react$ git push
+Enumerating objects: 33, done.
+Counting objects: 100% (33/33), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (33/33), done.
+Writing objects: 100% (33/33), 191.54 KiB | 895.00 KiB/s, done.
+Total 33 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To github.com:ravindrapanwar740/practice_react.git
+ * [new branch]      master -> master
+webiwork13@Webiwork13:~/practice_react$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   package-lock.json
+        modified:   package.json
+        modified:   src/App.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/components/About.js
+        src/components/Home3.js
+        src/components/List.js
+        src/components/List2.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+webiwork13@Webiwork13:~/practice_react$ git add .
+webiwork13@Webiwork13:~/practice_react$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   package-lock.json
+        modified:   package.json
+        modified:   src/App.js
+        new file:   src/components/About.js
+        new file:   src/components/Home3.js
+        new file:   src/components/List.js
+        new file:   src/components/List2.js
+
+webiwork13@Webiwork13:~/practice_react$ git commit -m "changes"
+[master 3bcacbf] changes
+ 7 files changed, 203 insertions(+), 21 deletions(-)
+ create mode 100644 src/components/About.js
+ create mode 100644 src/components/Home3.js
+ create mode 100644 src/components/List.js
+ create mode 100644 src/components/List2.js
+webiwork13@Webiwork13:~/practice_react$ git push
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 3.27 KiB | 279.00 KiB/s, done.
+Total 11 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), completed with 6 local objects.
+To github.com:ravindrapanwar740/practice_react.git
+   94c80c9..3bcacbf  master -> master
+webiwork13@Webiwork13:~/practice_react$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+webiwork13@Webiwork13:~/practice_react$ 
+
+//git config user.email ""
+//git config user.name ""
